@@ -43,16 +43,16 @@ body {
 /* Phone용 스타일 (화면 너비가 576px 미만인 경우 적용) */
 @media (max-width: 575.98px) {
     h3 {
-        font-size :24 px ;
+        font-size :24px ;
     }
     .btn-custom{
-        font-size :16 px;
+        font-size :16px;
         width :80%;
         height:auto ;
 
     }
     .card-title, .card-text{
-        font-size :16 px
+        font-size :16px
     }
 
     /* For mobile screens, stack the cards vertically */
@@ -62,7 +62,7 @@ body {
 
     /* Add some space between the cards on mobile */
     .card {
-        margin-bottom :20 px ;
+        margin-bottom :20px ;
         width:auto ;
     }
 }
