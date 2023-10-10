@@ -1,0 +1,68 @@
+/* 기본 스타일 */
+.center-cards {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin: 0 20px;
+}
+.btn-custom {
+    background-color: yellow;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+}
+h3 {
+    font-size: 36px;
+    font-weight:bold;
+    text-align:center;
+}
+.card-title, .card-text{
+    font-size :18px
+}
+
+body {
+    background-color: coral;
+}
+
+/* Desktop용 스타일 (화면 너비가 992px 이상인 경우 적용) */
+@media (min-width: 992px) {
+    .center-cards {
+        flex-direction : row ;
+    }
+    .card-title, .card-text{
+        font-size :22px
+    }
+    .btn-custom {
+        width : auto ;
+        height:auto ;
+        padding :10px
+    }
+}
+
+/* Phone용 스타일 (화면 너비가 576px 미만인 경우 적용) */
+@media (max-width: 575.98px) {
+    h3 {
+        font-size :24 px ;
+    }
+    .btn-custom{
+        font-size :16 px;
+        width :80%;
+        height:auto ;
+
+    }
+    .card-title, .card-text{
+        font-size :16 px
+    }
+
+    /* For mobile screens, stack the cards vertically */
+    .center-cards {
+        flex-direction : column ;
+    }
+
+    /* Add some space between the cards on mobile */
+    .card {
+        margin-bottom :20 px ;
+        width:auto ;
+    }
+}
