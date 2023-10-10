@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>영단어마스터 2000</title>
+    <title>영단어 마스터 2000</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href=".idea/my.css">
     <style>
 
-        body{
-            background-color: coral;
+        body {
+            background-color : coral;
         }
 
     </style>
 </head>
 <script>
     function ok(){
-        if(confirm("선택한 단어를 수정할까요?")){
-            alert("수정이 완료되었습니다.");
+        if(confirm("입력하신 단어를 단어장에 추가하시겠습니까?")){
+            alert("완료되었습니다.");
 
         }else{
             alert("취소되었습니다.");
@@ -40,7 +40,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href=".idea/index.html">Home</a></li>
                 <li><a href="add.html">새로운 영단어 추가</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -56,23 +56,30 @@
 </div>
 
 <div class="container-fluid bg-3 text-center">
-    <h3>[단어장 수정하기]</h3><br>
+    <h3>[새로운 영단어 추가하기]</h3><br>
     <form>
         <div>
-            <label for="word">영어단어 수정:</label>
-            <input type="text" id="word" name="word" value="provide" required>
+            <label for="word">추가할 단어:</label>
+            <input type="text" id="word" name="word" required>
         </div>
         <div>
-            <label for="definition">뜻 수정:</label>
-            <input type="text" id="definition" name="definition" value="제공하다, 공급하다" required>
+            <label for="definition">뜻:</label>
+            <input type="text" id="definition" name="definition" required>
+        </div>
+        <div>
+            <label for="level">레벨:</label>
+            <select id="level" name="level">
+                <option value="">선택하세요</option>
+                <option value="1">레벨 1</option>
+                <option value="2">레벨 2</option>
+                <option value="3">레벨 3</option>
+            </select>
         </div>
         <div>
             <input type="submit" value="Submit" onclick="ok()">
         </div>
     </form>
 </div><br>
-
-
 
 
 </body>
